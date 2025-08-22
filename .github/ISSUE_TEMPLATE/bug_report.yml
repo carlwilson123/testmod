@@ -1,0 +1,47 @@
+name: Bug Report
+about: Create a report to help us improve
+labels: bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Bug Report
+        Please fill out the following information to help us fix the issue.
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: Describe the bug
+      placeholder: Bug description
+    validations:
+      required: true
+  - type: input
+    id: mc_version
+    attributes:
+      label: Minecraft Version
+      description: What version of Minecraft are you using?
+      placeholder: e.g. 1.20.1
+    validations:
+      required: true
+  - type: input
+    id: mod_version
+    attributes:
+      label: Mod Version
+      description: What version of the mod are you using?
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How do we reproduce the bug?
+      placeholder: Step-by-step instructions
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Log Output
+      description: Paste any relevant log output
+      render: shell
