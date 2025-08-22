@@ -12,5 +12,6 @@ public class CustomSword extends SwordItem{
 
         super(Tiers.NETHERITE, 0, 10F, new Item.Properties().tab(CreativeModeTabs.COMBAT));
 
+        registerItem("my_sword", this);
     }
 }
